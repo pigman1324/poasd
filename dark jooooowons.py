@@ -1,4 +1,5 @@
 from typing import Mapping
+import os
 import discord
 import sqlite3
 import random
@@ -812,5 +813,5 @@ async def on_message(message):
                 except sqlite3.OperationalError:
                     embed = discord.Embed(description="서버가 등록되어있지 않습니다.", color=0xff0000)
                     await message.channel.send(embed=embed)
-
-client.run("ODc0ODcxNzg1ODk4Nzg2ODc4.YRNR2A.dMmKMG1diOI6-8Ce0A6cyNFOGWM")
+access_token = os.environ["BOT TOKEN"]
+client.run(access_token)
