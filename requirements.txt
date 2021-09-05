@@ -1,0 +1,5 @@
+discord.py==0.16.12
+Mapping.py
+sqlite3.py
+random.py
+asyncio.py
